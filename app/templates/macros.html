@@ -1,3 +1,6 @@
+<link href="https://fonts.googleapis.com/css?family=Henny+Penny&display=swap" rel="stylesheet">
+
+
 <body style="background-color: rgba(0, 0, 0, 0.5)">
     {% macro displayMovieList(movie_list) %}
 
@@ -5,7 +8,7 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
         <img src="{{ movie.poster }}" alt="{{ movie.title }} poster" class="img-responsive">
         <li class="text-center">
-            <a href="/movie/{{movie.id}}">
+            <a href="/movie/{{movie.id}}" style="text-align: center; font-family: 'Henny Penny', cursive; font-size: 1.5em; color: #000;">
                 {{ movie.title|truncate(10)}}</a>
         </li>
     </div>
